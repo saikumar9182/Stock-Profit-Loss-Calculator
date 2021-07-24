@@ -1,4 +1,3 @@
-
 import "./App.css";
 import React, { useState } from "react";
 
@@ -11,15 +10,21 @@ function App() {
   const [backColor, setBackColor] = useState("grey");
 
   function purchasePriceHandler(e) {
-    setPurchase_Price(e.target.value);
+    let num= parseInt(e.target.value);
+
+    setPurchase_Price(num);
   }
 
   function stockQuantity(e) {
-    setStock_Quantity(e.target.value);
+    let num= parseInt(e.target.value);
+
+    setStock_Quantity(num);
   }
 
   function currentPriceHandler(e) {
-    setCurrent_Price(e.target.value);
+    let num= parseInt(e.target.value);
+
+    setCurrent_Price(num);
   }
 
   function buttonHandler() {
@@ -64,7 +69,7 @@ function App() {
             width: "250px",
             height: "30px",
             border: "2px solid black",
-            margin: "20px",
+            margin: "20px"
           }}
           type="number"
           name="name"
@@ -80,7 +85,7 @@ function App() {
             width: "250px",
             height: "30px",
             border: "2px solid black",
-            margin: "20px",
+            margin: "20px"
           }}
           type="number"
           name="name"
@@ -96,7 +101,7 @@ function App() {
             width: "250px",
             height: "30px",
             border: "2px solid black",
-            margin: "20px",
+            margin: "20px"
           }}
           type="number"
           name="name"
