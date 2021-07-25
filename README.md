@@ -1,2 +1,2 @@
-# Cash Register Manager
+# Stock Profit Loss Calculator
  
